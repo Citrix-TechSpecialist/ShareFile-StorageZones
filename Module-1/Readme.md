@@ -1,27 +1,25 @@
-# Module 1: Running Docker Containers
+# Module 1: Installing and Configuring the StorageZone
 
-Once you have Docker installed locally or have gained access to the sandbox host, you can verify your installation by simply typing `docker --version` to see an output similar to: 
+When configuring an on-premises StorageZone it is best to first have all pre-requisites in place before starting the installation. The following is the pre-requisites list:
 
-```
-Docker version 17.06.0-ce, build 02c1d87
-```
-  > If you get a permissions errors on your local docker machine, type `sudo docker --version` to complete the task. The current user must be in [sudoers or docker group](https://docs.docker.com/engine/installation/linux/linux-postinstall/) to execute docker commands. 
+* A dedicated physical or virtual machine with 2 CPUs and 4 GB RAM
+ * Windows Server 2016
+ * Windows Server 2012 R2 (Datacenter, Standard, or Essentials)
+ * Windows Server 2008 R2, 64-bit edition, SP1 (Datacenter, Standard, or Essentials)
+* A publicy resolvable Fully Qualified Domain Name
+* Enable SSL for communication with ShareFile
+* A public SSL certificate
+* Allow inbound TCP requests on 443 through your firewall
+* Allow outbound TCP requests to the ShareFile Application on port 443 through your firewall
 
-## Docker Images 
+## Preparing your VM for StorageZones Controller 
 
-All Docker containers are based off [Docker images](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/). Docker images are built up from a series of layers. Each layer represents an instruction or resulting block storage changes to the container's filesystem. Each layer except the very last one is read-only, so once an image is made, any changes to data in a running container are made on a separate R/W layer. Think of it as application layering where the first image layer is always a blank minimalistic starting block from [scratch](https://hub.docker.com/_/scratch/) and changes are done by installing dependencies or applications that you desire to package with your docker image. See the visual below to illustrate the concept of image layering: 
+1. Open a session to the Virtual Machine you will be using as your StorageZones Controller. 
+2. Navigate to the [ShareFile downloads page](https://www.citrix.com/downloads/sharefile/) on the Citrix site and download the latest version of ShareFile StorageZones Controller to your VM.
+3. Create a new file share and give Full Control to a dedicated ShareFile service account. This network share will be dedicated to ShareFile Data only and will not be directly accessible to users over the network. it's generally a good idea to host this file share on a file server
+![docker-pull](images/create-sfdata-shared-folder.gif)
+4. 
 
-![docker image layers](./images/docker-images.png)
-
-You can store docker images in several places: 
-
-  1. [Docker Hub](https://hub.docker.com/explore/)
-  2. [Other Public Repositories](https://quay.io/tour/)
-  3. [Locally on your machine](http://blog.thoward37.me/articles/where-are-docker-images-stored/)
-  4. [Private Docker registries](https://docs.docker.com/registry/deploying/#storage-customization)
-  5. [In a tar archive](https://docs.docker.com/engine/reference/commandline/save/)
-
- We will mainly be concerning ourselves with **#1** pulling images from Docker Hub.
 
 ## Exercises 
 
