@@ -119,11 +119,13 @@ Navigate to the ShareFile Data network file share you created earlier and notice
 
 ![SFData](images/SFData-before-after.gif)
 
-Open a local browser, navigate to your ShareFile account (e.g.: [https://your-subdomain.sharefile.com](https://your-subdomain.sharefile.com)), and login in with your ShareFile Admin credentials. Click on *Settings > Admin Settings > StorageZones*
+Open a local browser, navigate to your ShareFile account (e.g.: [https://your-subdomain.sharefile.com](https://your-subdomain.sharefile.com)), and login in with your ShareFile Admin credentials. Click on *Settings > Admin Settings > StorageZones*. This area provides an overview of all available StorageZones on your account, whether they are on the Citrix-managed cloud, or customer-managed on-premises or cloud. The StorageZone will provides its health status and clicking on the name of your StorageZone will provide status on each of the individual StorageZones Controller hosts if you have configured your StorageZone with high availability. You can also see all folders and Connectors that reside on the Zone.
 
 ![ShareFile StorageZones management page](images/sf-sz-mgmt.gif)
 
 ## Conclusion
+
+Congratulations, you have finished configuring your StorageZone. However, uploads to the StorageZone will not work quite yet because inbound traffic to this StorageZone must first pass to a NetScaler. In Module 2 you will configure the NetScaler to manage ShareFile traffic before passing it onto the StorageZones Controller.
 
 ## Shortcuts
 
