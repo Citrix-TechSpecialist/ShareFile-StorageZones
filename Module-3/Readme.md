@@ -6,7 +6,7 @@
 
 With ShareFile it is possible to leverage more than a single StorageZone on an account, allowing customers to store their data in multiple on-prem zones, cloud zones, Citrix-managed zones or some combination thereof. 
 
-To assign your newly created StorageZone to a Shared Folder first log into your ShareFile account, then navigate to *Folders > Shared Folders*. Click the green circle at the top right of the page and select **Create Folder**.
+To assign your newly created StorageZone to a Shared Folder first log into your ShareFile account, then navigate to _Folders > Shared Folders_. Click the green circle at the top right of the page and select **Create Folder**.
 
 In the dialogue, name your folder and then select your private zone from the *StorageZone dropdown menu*.
 
@@ -14,7 +14,7 @@ Once in your folder drag to upload a file or two.
 
 ![Creating a shared folder](images/shared-folder.gif)
 
-
+ 
 
 ## Conclusion
 
