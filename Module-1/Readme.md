@@ -54,7 +54,7 @@ Navigate to [http://localhost/ConfigService/login.aspx](http://localhost/ConfigS
 
 ![include .NET 4.5 libraries](images/szc-config-login.gif)
 
-### Configure the StorageZone
+### Configuring the StorageZone
 
 On the configuration page select to **Create new Zone** and in the top field immediately to the right type a "friendly" name for your StorageZone such as *Private Zone*.
 
@@ -109,7 +109,7 @@ Click **Register**. The page will refresh and you should see a success message a
 
 ![SZC register zone](images/szc-config-register.png)
 
-### Check the StorageZones Controller status
+### Checking the StorageZones Controller status
 
 Click on the Monitoring tab at the top of the configuration page and make sure you see green checkboxes all the way down (except for the Citrix Cloud Uploader Service, which should have a yellow warning triangle). If one of the services shows a red box with an "X" open the *Services* Administrative Tool and restart the appropriate Citrix ShareFile service.
 
@@ -132,4 +132,4 @@ Congratulations, you have finished configuring your StorageZone. However, upload
 1. [Introduction: Deploying an on-premises StorageZones Controller](../)
 2. [Module 1: Installing and Configuring an on-premises ShareFile StorageZone](../Module-1)
 3. [Module 2: Configuring NetScaler for an on-premises ShareFile StorageZone](../Module-2)
-
+4. [Module 3: Using your on-premises StorageZone](../Module-3)
