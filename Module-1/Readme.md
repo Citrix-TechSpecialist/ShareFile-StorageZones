@@ -3,9 +3,9 @@
 When configuring an on-premises StorageZone it is best to first have all pre-requisites in place before starting the installation. The following is the pre-requisites list:
 
 * A dedicated physical or virtual machine with 2 CPUs and 4 GB RAM
- * Windows Server 2016
- * Windows Server 2012 R2 (Datacenter, Standard, or Essentials)
- * Windows Server 2008 R2, 64-bit edition, SP1 (Datacenter, Standard, or Essentials)
+	* Windows Server 2016
+	* Windows Server 2012 R2 (Datacenter, Standard, or Essentials)
+	* Windows Server 2008 R2, 64-bit edition, SP1 (Datacenter, Standard, or Essentials)
 * A publicy resolvable Fully Qualified Domain Name
 * Enable SSL for communication with ShareFile
 * A public SSL certificate
@@ -125,7 +125,7 @@ Open a local browser, navigate to your ShareFile account (e.g.: [https://your-su
 
 ## Conclusion
 
-Congratulations, you have finished configuring your StorageZone. However, uploads to the StorageZone will not work quite yet because inbound traffic to this StorageZone must first pass to a NetScaler. In Module 2 you will configure the NetScaler to manage ShareFile traffic before passing it onto the StorageZones Controller.
+Congratulations, you have finished configuring your StorageZone. However, uploads to the StorageZone will not work quite yet because inbound traffic to this StorageZone must first pass to a NetScaler. In [Module 2](../Module-2) you will configure the NetScaler to manage ShareFile traffic before passing it onto the StorageZones Controller.
 
 ## Shortcuts
 
