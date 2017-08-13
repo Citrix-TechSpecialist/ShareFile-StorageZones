@@ -3,9 +3,9 @@
 When configuring an on-premises StorageZone it is best to first have all pre-requisites in place before starting the installation. The following is the pre-requisites list:
 
 * A dedicated physical or virtual machine with 2 CPUs and 4 GB RAM
-	* Windows Server 2016
-	* Windows Server 2012 R2 (Datacenter, Standard, or Essentials)
-	* Windows Server 2008 R2, 64-bit edition, SP1 (Datacenter, Standard, or Essentials)
+    * Windows Server
+    * Windows Server 2012 R2 (Datacenter, Standard, or Essentials)
+    * Windows Server 2008 R2, 64-bit edition, SP1 (Datacenter, Standard, or Essentials)
 * A publicy resolvable Fully Qualified Domain Name
 * Enable SSL for communication with ShareFile
 * A public SSL certificate

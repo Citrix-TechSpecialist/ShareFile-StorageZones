@@ -52,7 +52,7 @@ Next create an LDAP configuration so user StorageZones Connector requests to a *
 
 ![ShareFile wizard AAA](images/sfwizard-aaa.gif)
 
-Finalize the configuration.
+Finalize your configuration.
 
 ## Adding support for browsing Connectors from the web
 
@@ -60,7 +60,7 @@ To support web access to StorageZone Connectors, you must perform additional Net
 
 In this section you will create and configure a third NetScaler load-balancing virtual server, used to ensure that ShareFile clients send credentials only when logged on to a trusted ShareFile domain.
 
-StorageZones Controller uses the Cross-Origin Resource Sharing (CORS) standard to provide the necessary security for requests to restricted zones and from the ShareFile web interface to StorageZone Connectors. CORS uses HTTP headers to allow the client and server to know enough about each other to determine if a request or response should succeed.
+> StorageZones Controller uses the Cross-Origin Resource Sharing (CORS) standard to provide the necessary security for requests to StorageZones and from the ShareFile web interface to browse Connectors. CORS uses HTTP headers to allow the client and server to know enough about each other to determine if a request or response should succeed.
 
 ![NetScaler configured for web access to Connectors](images/sf-deploy-netscaler-web-connectors.png)
 
@@ -78,17 +78,13 @@ Bind the exisitng *SF_SVC* service and the *SSL certificate* to your *SF_OPTIONS
 
 Navigate to *Traffic Management > Content Switching > Policies* and click to **Add** a new policy. 
 
-Name the policy something like **OPTIONS** and enter the following into the Expression field:
-
-	HTTP.REQ.METHOD.EQ("OPTIONS")
+Name the policy something like **OPTIONS** and enter the following into the Expression field: `HTTP.REQ.METHOD.EQ("OPTIONS")`
 
 This policy expression looks at the ShareFile request header for the string "OPTIONS".
 
 ![Configure Content Switching OPTIONS policy](images/sfoptions-cs-policy.gif)
 
-Select and **Edit** the Connectors (**_SF_CIF_SP_CSPOL**) policy. In the **Expressions** field *append* the following to the end of the existing expression:
-
-	 || HTTP.REQ.URL.CONTAINS("/ProxyService/")
+Select and **Edit** the Connectors (**_SF_CIF_SP_CSPOL**) policy. In the **Expressions** field *append* the following to the end of the existing expression: ` || HTTP.REQ.URL.CONTAINS("/ProxyService/")`
 
 The full expression should read:
 
@@ -98,9 +94,7 @@ This Connectors policy expression is looking for any one of the three strings in
 
 ![modify connectors policy](images/connector-policy.gif)
 
-Select and **Edit** the ShareFile Data (**_SF_SZ_CSPOL**) policy. In the **Expressions** field *append* the following to the end of the existing expression:
-
-	 && HTTP.REQ.URL.CONTAINS("/ProxyService/").NOT
+Select and **Edit** the ShareFile Data (**_SF_SZ_CSPOL**) policy. In the **Expressions** field *append* the following to the end of the existing expression: ` && HTTP.REQ.URL.CONTAINS("/ProxyService/").NOT`
 
 The full expression should read:
 
@@ -124,7 +118,7 @@ Target the **SF_OPTIONS** load balancing virtual server you created earlier.
 
 ## Conclusion
 
-Now that you have finalized your NetScaler configuration for ShareFile you should now be able to successfully use your on-premises StorageZone. Visit [Module 3](../Module-3) illustrate how to setup Shared Foldes pointing to your StorageZone
+Now that you have finalized your NetScaler configuration for ShareFile you should now be able to successfully use your on-premises StorageZone. Visit [Module 3](../Module-3) to learn how to setup Shared Foldes Connectors on your StorageZone.
 
 ## Shortcuts
 

@@ -2,7 +2,7 @@
 
 
 
-## Shared Folder
+## Test your StorageZone by uploading to a Shared Folder
 
 With ShareFile it is possible to leverage more than a single StorageZone on an account, allowing customers to store their data in multiple on-prem zones, cloud zones, Citrix-managed zones or some combination thereof. 
 
@@ -14,11 +14,21 @@ Once in your folder drag to upload a file or two.
 
 ![Creating a shared folder](images/shared-folder.gif)
 
+## Create a network file share Connector
+
+Navigate to *Settings > Admin Settings > Connectors*. Browse to *Add Connectors* at the bottom of the page and find *Network Share*. Click the **Add** button.
+
+Give your Connector a name and then enter the UNC path to a network file share in your environment.
+
+![](images/create-connector.gif)
  
+Test the Connector by browsing to *Folders > Network Shares* and clicking on your new test share. Authenticate with the domain credentials for a user account that has rights on the share.
+ 
+![](images/connector-auth.gif)
 
 ## Conclusion
 
-Now that you have finalized your NetScaler configuration for ShareFile you should now be able to successfully use your on-premises StorageZone. Visit [Module 3](../Module-3) illustrate how to setup Shared Foldes pointing to your StorageZone
+Congratulations! You have successfully configured an on-premises StorageZone and secured it with NetScaler. For additional technical documentation please check out [ShareFile Citrix Docs](https://docs.citrix.com/en-us/sharefile.html) where you can learn to automate user provisioning and configure SSO/SAML.
 
 ## Shortcuts
 
