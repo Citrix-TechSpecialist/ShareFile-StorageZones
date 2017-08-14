@@ -129,7 +129,7 @@ Congratulations, you have finished configuring your StorageZone. However, upload
 
 ## Shortcuts
 
-1. [Introduction: Deploying an on-premises StorageZones Controller](/)
+1. [Introduction: Deploying an on-premises StorageZones Controller](../)
 2. Module 1: Installing and Configuring an on-premises ShareFile StorageZone
 3. [Module 2: Configuring NetScaler for an on-premises ShareFile StorageZone](../Module-2)
 4. [Module 3: Using your on-premises StorageZone](../Module-3)
