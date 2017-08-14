@@ -1,6 +1,6 @@
 # Deploying an On-Premises StorageZone
 
-##Introduction
+## Introduction
 
 ShareFile is a file sync and share collaboration platform that leverages a multi-component architecure to offer customers flexibility in where they maintain their data and the types of data which may be accessed.
 
@@ -29,7 +29,7 @@ This lab consist of three moduels where you will install and configure a Storage
 
 ## Table of Contents
 
-1. [Introduction: Deploying an on-premises StorageZones Controller](/)
+1. [Introduction: Deploying an on-premises StorageZones Controller](../)
 2. [Module 1: Installing and Configuring an on-premises ShareFile StorageZone](/Module-1)
 3. [Module 2: Configuring NetScaler for an on-premises ShareFile StorageZone](/Module-2)
 4. [Module 3: Using your on-premises StorageZone](/Module-3)
