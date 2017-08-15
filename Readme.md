@@ -27,6 +27,48 @@ For more detailed guidance on deploying an on-premises StorageZone please [](htt
 
 This lab consist of three moduels where you will install and configure a StorageZones Controller, configure a NetScaler to secure ShareFile traffic and then setup and use your StorageZone Controller in practice to access on-premises ShareFile Data and Connectors.
 
+## Environment Detials
+
+### ShareFile Account Credentails
+
+**ShareFile Account:** 
+
+> https://student-#.sharefile.com 
+
+> Username: SFLabs@sharefiledemo.com
+
+> Password: Citrix123
+
+###NetScaler
+> NetScaler
+> http://192.168.10.100
+
+> Username: nsroot
+
+> Password: nsroot
+
+### Domain Accounts
+> Domain: training.lab
+> 
+> Username: Training\Administrator
+> 
+> Username: Training\User1
+> 
+> Username: Training\User2
+> 
+> Password: Citrix123
+
+### StorageZone Config Information
+ 
+> Content Switching VIP - 192.168.10.92
+> 
+> StorageZones Controller - SFILE1 - 192.168.10.105
+
+> AAA vServer - 192.168.10.40
+
+> LDAP Server - AD - 192.168.10.11
+
+
 ## Table of Contents
 
 1. Introduction: Deploying an on-premises StorageZones Controller
