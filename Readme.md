@@ -48,12 +48,18 @@ This lab consist of three moduels where you will install and configure a Storage
 
 ### StorageZone Configuration Information
  
-| Resource               | Hostname                         | IP  
-| :---                   | :---                             | :---    
-| StorageZone Controller | SFILE1.training.lab              | 192.168.10.105  
-| Content Switching VIP  | Public FQDN 1 on enrollment page | 192.168.10.92  
-| AAA Virtual Server     | --                               | 192.168.10.40
-| LDAP Server            | AD.training.lab                  | 192.168.10.11
+| Resource               | Hostname            | IP             
+| :---                   | :---                | :---           
+| StorageZone Controller | SFILE1.training.lab | 192.168.10.105  
+| Content Switching VIP  |                     | 192.168.10.92  
+| AAA Virtual Server     | --                  | 192.168.10.40
+| LDAP Server            | AD.training.lab     | 192.168.10.11
+
+The **Public FQDN 1** for the *StorageZone* is generated dynamically and will be available on the [enrollments page](https://events.citrixvirtualclassroom.com/enrollments) once you have provisioned your lab environment -- it will be on the format ***#-#-#-#.mycitrixtraining.net***.
+
+There will be a NAT rule routing traffic to *FQDN 1* into the *Content Switching VIP* (see chart above).
+
+Keep this page and the enrollments page open in tabs for reference as you work through the lab.
 
 ## Table of Contents
 
