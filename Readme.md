@@ -34,7 +34,8 @@ This lab consist of three moduels where you will install and configure a Storage
 1. Go to events.citrixvirtualclassroom.com 
 2. Enter user email 
 3. Click enroll in class 
-4. Enter code STB9-15013-AUG18
+4. Enter the enrollment code you receive in email
+
 5. Click Provision lab
 
 ### ShareFile Account Credentails
