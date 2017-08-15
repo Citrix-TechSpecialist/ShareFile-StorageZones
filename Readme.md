@@ -27,56 +27,33 @@ For more detailed guidance on deploying an on-premises StorageZone please [](htt
 
 This lab consist of three moduels where you will install and configure a StorageZones Controller, configure a NetScaler to secure ShareFile traffic and then setup and use your StorageZone Controller in practice to access on-premises ShareFile Data and Connectors.
 
-## Environment Detials
+## Environment Details
 
-### Enroll
+### Enroll and Provision Lab Environment
 
-1. Go to events.citrixvirtualclassroom.com 
-2. Enter user email 
-3. Click enroll in class 
-4. Enter the enrollment code you receive in email
+1. Go to **[events.citrixvirtualclassroom.com](https://events.citrixvirtualclassroom.com)**
+2. Enter user email
+3. Click enroll in class
+4. Enter the enrollment code: **STB9-15013-AUG18**
+5. Click Provision lab (may take 3-5 minutes)
 
-5. Click Provision lab
+### Lab Credentials
 
-### ShareFile Account Credentails
+| Resource          | Username                 | Password       | Login URL 
+| :---              | :---                     | :---           | :---
+| ShareFile    		| SFLabs@sharefiledemo.com | See Instructor | student-#.sharefile.com
+| NetScaler       	| nsroot                   | See Instructor | http://192.168.10.100
+| Domain Admin 		| Training\Administrator   | See Instructor | --
+| User 1            | Training\User1           | See Instructor | --
 
-**ShareFile Account:** 
-
-> https://student-#.sharefile.com 
-
-> Username: SFLabs@sharefiledemo.com
-
-> Password: Citrix123
-
-###NetScaler
-> NetScaler
-> http://192.168.10.100
-
-> Username: nsroot
-
-> Password: nsroot
-
-### Domain Accounts
-> Domain: training.lab
-> 
-> Username: Training\Administrator
-> 
-> Username: Training\User1
-> 
-> Username: Training\User2
-> 
-> Password: Citrix123
-
-### StorageZone Config Information
+### StorageZone Configuration Information
  
-> Content Switching VIP - 192.168.10.92
-> 
-> StorageZones Controller - SFILE1 - 192.168.10.105
-
-> AAA vServer - 192.168.10.40
-
-> LDAP Server - AD - 192.168.10.11
-
+| Resource               | Hostname                         | IP  
+| :---                   | :---                             | :---    
+| StorageZone Controller | SFILE1.training.lab              | 192.168.10.105  
+| Content Switching VIP  | Public FQDN 1 on enrollment page | 192.168.10.92  
+| AAA Virtual Server     | --                               | 192.168.10.40
+| LDAP Server            | AD.training.lab                  | 192.168.10.11
 
 ## Table of Contents
 
